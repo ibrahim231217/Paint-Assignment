@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
                 
     <title>pAiNt</title>
     
@@ -78,258 +82,288 @@ height: 400px;
     margin: auto;
       }
 
+.light_orange_shape {
+  display: flex;
+  padding: 14px 40px 14px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  border-radius: 5000px;
+  background: var(--white-fffaeb, #FFFAEB);
+}
+
   .segoe {
     font-family: 'Segoe UI', 'Segoe UI Bold', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-    </style>
+
+
+</style>
 
   </head>
 
-  
 
-  <body class="bg-[#FEEDBC]">
 
-      <nav>
-        <div class="navbar white_rectengale shadow-md flex items-center justify-center bg-white mt-[60px]">
-          <img  class="h-16 w-auto"  src="b6fad414338d0ad0fa08bf0a86e0539cfedd5cc6.png"  alt="logo"  />
+
+
+
+
+
+
+<!-- NAVBAR___AND ____ BANNER  -->
+
+
+<header class="bg-[#FEEDBC]  ">
+
+<!-- paint_pic -->
+<div class="flex justify-center py-[60px]  ">
+
+
+    <div class="w-[80%] h-[96px] bg-white rounded-[5000px] flex justify-center " >
+        <img src="paint_pic.png" alt="LOGO" class="w-[132px] h-[70px] m-auto">
         </div>
-      </nav>
-    
-   <div class=" font-extrabold text-[#F9B800] text-[30px] ml-64 mt-28">
-  RISUS PRAESENT VULPUTATE
+
+
 </div>
-
-
-<div class="text-[80px] font-bold ml-64 leading-[90px]">
-  Cursus Integer<br>
-  Consequat Tristique.|
-</div>
+<!-- paint_pic_end -->
 
 
 
 
-<div class=" pill_shape text-center font-medium"> 
-Cursus Integer
-</div>
+<!-- Banner Section -->
+<div class="flex flex-col md:flex-row items-start md:items-center gap-16 px-6 md:px-[260px]">
 
-<div class=" pill_shape  text-center font-medium"> 
-Integer Consequat 
-</div>
+  <!-- Left: Text Content -->
+  <div class="flex-1">
 
-
-
-<div class=" pill_shape text-center font-medium"> 
-Tellus Euismod Pellentesque
-</div>
-
-
-<div class=" pill_shape text-center font-medium"> 
-Aliquot Tristique
-</div>
-
-<div class=" pill_shape text-center font-medium bg-yellow-500"> 
-Lorem Ipsum
-</div>
-
-
-<!-- banner  -->
-
-
-<section  class= "orange_shape flex-col mt-[165px]">
-
-  <div >
-   <h1 class="font-bold text-[50px] text-left">Phasellus a vitae iaculis magna eleifend pulvinar velit odio.</h1>
-  </div>
-   
-
-<div class="text-[20px] text-left underline underline-offset-2">
-  Vulputate et vulputate suspendisse natoque!
-</div>
-
-
-<div class="text-[20px] font-normal">
-  Euismod magna id purus eget nunc ligula suspendisse dui netus. Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis vulputate et vulputate suspendisse natoque id tellus consectetur pulvinar et. 
-</div>
-
-<div class=" pill_shape text-center font-medium  bg-black text-teal-50 text-[24px] font-bold"> 
-Lorem Ipsum
-</div>
-
-
-<div class="w-[615px] h-[615px] mr-2 bg-transparent">
-  <img src="client_2025-06-21_00-17-17.jpg" alt="" class="w-[615px] h-[515px] bg-transparent mr-2">
-</div>
-
-
-</section>
-
-
-
-
-<section  class= " black_shape  flex-col mt-[165px]">
-
-  <p>Quisque porttitor vitae vel amet neque scelerisque mattis. Consectetur nibh velit magna consectetur leo. </p>
-  <h3>Cursus Integer Conseq
-Aliquam Tristique. </h3>
-
-
-</section>
-
-
-
-
-
-  </body>
-
-
-  <section class=" orange_shape  bg-black ">
-
-
-    <div>
-      Quisque porttitor vitae vel amet neque scelerisque mattis. Consectetur nibh velit magna consectetur leo. 
+    <!-- Heading -->
+    <div class="uppercase font-bold text-[16px] md:text-3xl text-[#F9B800]">
+      risus praesent vulputate.
     </div>
 
-<div>
+    <!-- Subheading -->
+    <div class="uppercase font-bold text-[36px] md:text-[50px] md:pb-[60px]">
+      Cursus Integer <br> Consequat Tristique.
+    </div>
+
+    <!-- Feature List for large screen -->
+    <div class="hidden lg:block">
+      <div class="flex flex-wrap gap-[14px] pb-[14px]">
+        <!-- Feature Item -->
+        <div class="bg-white flex items-center gap-2 py-[5px] rounded-full pl-[20px] pr-[40px]">
+          <img src="tick.svg" alt="tick">
+          <span>Cursus Integer</span>
+        </div>
+        <div class="bg-white flex items-center gap-2 py-[5px] rounded-full pl-[20px] pr-[40px]">
+          <img src="tick.svg" alt="tick">
+          <span>Integer Consequat</span>
+        </div>
+        <div class="bg-white flex items-center gap-2 py-[5px] rounded-full pl-[20px] pr-[40px]">
+          <img src="tick.svg" alt="tick">
+          <span>Tellus Euismod Pellentesque</span>
+        </div>
+        <div class="bg-white flex items-center gap-2 py-[5px] rounded-full pl-[20px] pr-[40px]">
+          <img src="tick.svg" alt="tick">
+          <span>Aliquot Tristique</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Feature List for small screen -->
+    <div class="lg:hidden">
+      <div class="space-y-[14px]">
+        <div class="bg-white inline-flex items-center gap-2 py-[5px] rounded-full pl-[20px] pr-[40px]">
+          <img src="tick.svg" alt="tick">
+          <span>Cursus Integer</span>
+        </div>
+        <div class="bg-white inline-flex items-center gap-2 py-[5px] rounded-full pl-[20px] pr-[40px]">
+          <img src="tick.svg" alt="tick">
+          <span>Integer Consequat</span>
+        </div>
+        <div class="bg-white inline-flex items-center gap-2 py-[5px] rounded-full pl-[20px] pr-[40px]">
+          <img src="desktop/icon-tick.png" alt="tick">
+          <span>Tellus Euismod Pellentesque</span>
+        </div>
+        <div class="bg-white inline-flex items-center gap-2 py-[5px] rounded-full pl-[20px] pr-[40px]">
+          <img src="desktop/icon-tick.png" alt="tick">
+          <span>Aliquot Tristique</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="mt-2">
+      <button class="bg-[#f9b800] rounded-full mt-[40px] w-[335px] md:w-[250px] h-[48px]">
+        <div class="flex items-center justify-center gap-5">
+          <span class="text-[20px]">Lorem ipsum</span>
+          <img src="black_right_arrow.svg" alt="arrow">
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <!-- Right: Client Picture -->
+  <div class="flex-1">
+    <img src="DrawKit Vector Illustration-1.png" alt="Client Image" class="w-full h-auto">
+  </div>
+</div>
+
+
+</header>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- main  banner  cards section -->
+   
+  <section class="bg-[#262626] ">
+
+<div class="flex flex-col 2xl:flex-row  pt-[288px] px-[20px] xl:px-0 justify-center ">
+
+  <div class="2xl:max-w-[50%] 2xl:pt-[100px] ">
+
+
+
+<p class=" text-[20px] text-[#f9b200] font-[400] sm:max-w-[55%]">    
+  Quisque porttitor vitae vel amet neque scelerisque mattis. Consectetur nibh velit magna consectetur leo. 
+</p>
+<p class="text-[36px] md:text-[50px] text-white font-[700] sm:max-w-[60%]">
   Cursus Integer Conseq
 Aliquam Tristique. 
+</p>
+<div class="flex  justify-center sm:justify-normal pt-[30px]">
+  <button class="btn bg-white rounded-full mt-[40px]  md:w-[250px] w-[335px] h-[48px] ">
+
+    <div class="flex gap-5">
+        <div class="text-[20px]">
+            Lorem ipsum
+        </div>
+    
+        <div>
+            <img src="desktop/right-arrow.png" alt="">
+        </div>
+    
+    </div>
+    
+                    </button>
+ </div>
+
+
+
+       </div>
+      
+       <div>
+        <div class="flex justify-center">
+<div class="grid grid-cols-1 md:grid-cols-2 pt-[55px] xl:pr-[-100px] gap-[60px] pb-[350px] jc">
+  
+  <div class="w-[335px] md:w-[350px] h-[400px] bg-white shadow-lg rounded-[60px] 2xl:translate-y-[-125px] pl-[50px] ">
+
+    <div class="pt-[50px]">
+      <img src="desktop/icon-join.png" alt="">
+    </div>
+    <div class="pt-[20px] text-[72px] font-[700]">
+      1<span class="text-[#f9b200]">.</span>
+    </div>
+    <div class="text-[24px] font-[700]">
+      Phasellus Vitae
+    </div>
+    <div class="pt-[18px] text-[20px] font-[600]">
+      Quisque
+    </div>
+    <div class="text-[18px] font-[350]">
+      Porttitor vitae vel amet 
+    </div>
+  </div>
+
+  <div class="w-[335px] md:w-[350px] h-[400px] bg-[#f9b200] shadow-lg rounded-[60px]   pl-[50px] ">
+
+
+    <div class="pt-[50px]">
+      <img src="desktop/icon-inifinity.png" alt="">
+    </div>
+    <div class="pt-[20px] text-[72px] font-[700]">
+      2<span class="text-white">.</span>
+    </div>
+    <div class="text-[24px] font-[700]">
+      Iaculis Magna
+    </div>
+    <div class="pt-[18px] text-[20px] font-[600]">
+      Porttitor
+    </div>
+    <div class="text-[18px] font-[350]">
+      neque scelerisque mattis. 
+    </div>
+
+  </div>
+
+  <div class="w-[335px] md:w-[350px] h-[400px]  md:bg-[#f9b200]  bg-white shadow-lg rounded-[60px]  2xl:translate-y-[-125px]  pl-[50px]">
+
+
+    <div class="pt-[50px]">
+      <img src="desktop/icon-hands.png" alt="">
+    </div>
+    <div class="pt-[20px] text-[72px] font-[700]">
+      3<span class="text-[#f9b200] md:text-white">.</span>
+    </div>
+    <div class="text-[24px] font-[700]">
+      Eleifend Pulvinare
+    </div>
+    <div class="pt-[18px] text-[20px] font-[600]">
+      Vitae
+    </div>
+    <div class="text-[18px] font-[350]">
+      Consectetur nibh velit 
+    </div>
+
+  </div>
+
+  <div class="w-[335px] md:w-[350px] h-[400px]  md:bg-white bg-[#f9b200] shadow-lg rounded-[60px]  pl-[50px]  ">
+
+
+    <div class="pt-[50px]">
+      <img src="desktop/icon-man-yoga.png" alt="">
+    </div>
+    <div class="pt-[20px] text-[72px] font-[700]">
+      4<span class="md:text-[#f9b200] text-white">.</span>
+    </div>
+    <div class="text-[24px] font-[700]">
+      Velit Odio Phir
+    </div>
+    <div class="pt-[18px] text-[20px] font-[600]">
+      Ametneq
+    </div>
+    <div class="text-[18px] font-[350]">
+      magna consectetur leo.  
+    </div>
+
+  </div>
 </div>
+</div>  
 
-
-    <div class=" pill_shape text-center font-medium bg-white text-black"> 
-Lorem Ipsum
+       </div>
 </div>
-
-    <div class="white_and_orange_shape  flex flex-col items-start gap-2 text-black bg-white p-6 rounded-lg ">
-
-      <img src="070a0195663148439728ebf1dc10325334e50988.png" alt="" class="w-[60px] h-[60px]">
-
-      <div class="font-bold text-[72px] ">1 <span class="text-orange-500">.</span> </div>
-
-      
-
-      <div class="  font-bold text-[24px]  ">
-         Phasellus Vitae 
-        </div>
-
-      <div class=" font-semibold  text-[20px]"> Quisque </div>
-
-       <div class="font-semibold  text-[18]">Porttitor vitae vel amet </div>
-    </div>
-
-
-
-
-
-
-    <div class="white_and_orange_shape  flex flex-col items-start gap-2 text-black bg-[#F9B800] p-6 rounded-lg ">
-
-      <img src="46be62a664e4c569f0b7757dbfdc53445c16040f.png" alt="" class="w-[50px] h-[50px]">
-
-      <div class="font-bold text-[72px] ">2 <span class="text-white">.</span> </div>
-
-      
-
-      <div class="  font-bold text-[24px]  ">
-         Iaculis Magna
-        </div>
-
-      <div class=" font-semibold  text-[20px]"> Porttitor </div>
-
-       <div class="font-semibold  text-[18]">neque scelerisque mattis. </div>
-    </div>
-
-
-
-
-
-
-
-
-    <div class="white_and_orange_shape  flex flex-col items-start gap-2 text-black bg-[#F9B800] p-6 rounded-lg ">
-
-      <img src="8278431225ece2b1b32f393a4e11af1978ea9bc5.png" alt="" class="w-[50px] h-[50px]">
-
-      <div class="font-bold text-[72px] ">3 <span class="text-white">.</span> </div>
-
-      
-
-      <div class="  font-bold text-[24px]  ">
-        Eleifend Pulvinar 
-        </div>
-
-      <div class=" font-semibold  text-[20px]"> Vitae </div>
-
-       <div class="font-semibold  text-[18]">Consectetur nibh velit </div>
-    </div>
-
-
-
-
-
-
-    <div class="white_and_orange_shape  flex flex-col items-start gap-2 text-black bg-white p-6 rounded-lg ">
-
-      <img src="070a0195663148439728ebf1dc10325334e50988.png" alt="" class="w-[60px] h-[60px]">
-
-      <div class="font-bold text-[72px] ">1 <span class="text-orange-500">.</span> </div>
-
-      
-
-      <div class="  font-bold text-[24px]  ">
-         Phasellus Vitae 
-        </div>
-
-      <div class=" font-semibold  text-[20px]"> Quisque </div>
-
-       <div class="font-semibold  text-[18]">Porttitor vitae vel amet </div>
-    </div>
-
-
 
   </section>
-
-<!-- ending -->
-
-
-  <section class="black_shape  bg-white mt-[315px] ">
-
-<div>
-  <img src="1272d779305d09b4b459698ab02102bff0d20bb8.jpg" alt="User profile picture" class="w-[472px] h-[472px] rounded-full">
-</div>
+  
+<!-- LIST SECTION STARTED -->
 
 
-
-<div class="flex-row ml-20  ">
-
-<div class="gap-10 text-[50px] font-bold ">
-  What our customers thought?
-</div>
-
-<div >Euismod magna id purus eget nunc ligula suspendisse dui <br>netus. Condimentum blandit rutrum at mauris enim pulvinar <br> duis etiam duis. </div>'
-
-<div class="font-bold text-[24px]  " >Holly Davidson</div>
-
-<div class=" flex gap-4">
-  <img src="/trending_flat.svg" alt="">
-
-  <img src="/trending_flat (1).svg" alt="">
-</div>
-
-
-
-
-</div>
-
-
-  </section>
-
-
-
-
-
-
-  <section class="mt-[180px]">
-
-  </section>
+  
 </html>
